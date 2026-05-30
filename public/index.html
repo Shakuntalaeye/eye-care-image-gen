@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eye Care Ad Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="brand">
+          <span class="brand-icon" aria-hidden="true">👁</span>
+          <div>
+            <h1>Eye Care Ad Generator</h1>
+            <p class="subtitle">
+              Random prompts from your file → Gemini image generation
+            </p>
+          </div>
+        </div>
+        <div id="status-pill" class="status-pill">Checking…</div>
+      </header>
+
+      <main class="layout">
+        <section class="panel prompt-panel">
+          <div class="panel-head">
+            <h2>Prompt</h2>
+            <button type="button" id="btn-random-prompt" class="btn btn-ghost">
+              Shuffle prompt
+            </button>
+          </div>
+          <p id="prompt-meta" class="prompt-meta">—</p>
+          <div id="prompt-text" class="prompt-text">
+            Loading a random prompt…
+          </div>
+          <div class="actions">
+            <button type="button" id="btn-generate" class="btn btn-primary">
+              Generate image
+            </button>
+          </div>
+        </section>
+
+        <section class="panel image-panel">
+          <div class="panel-head">
+            <h2>Generated image</h2>
+            <a
+              id="btn-download"
+              class="btn btn-ghost hidden"
+              href="#"
+              download="eye-care-ad.png"
+              >Download</a
+            >
+          </div>
+          <div id="image-stage" class="image-stage">
+            <div class="placeholder">
+              <p>Click <strong>Generate image</strong> to create a random social ad.</p>
+              <p class="hint">Uses Google Gemini image models via your API key.</p>
+            </div>
+          </div>
+          <p id="error-box" class="error-box hidden" role="alert"></p>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

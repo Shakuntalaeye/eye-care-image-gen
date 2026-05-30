@@ -1,0 +1,17 @@
+{
+  "name": "eye-care-image-gen",
+  "version": "1.0.0",
+  "description": "Random eye-care social ad image generator from prompts.txt",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  }
+}
