@@ -17,19 +17,19 @@ Open **http://localhost:3847**
 
 ## Deploy to GitHub
 
-1. Create a new repository on GitHub (e.g. `eye-care-image-gen`). Do **not** add a README if you already have one locally.
+1. Create a new repository at [github.com/new](https://github.com/new):
+   - Owner: **Shakuntalaeye**
+   - Name: **eye-care-image-gen**
+   - Do **not** add a README, `.gitignore`, or license (this repo already has them).
 
-2. From this folder:
+2. Push from this folder (remote is already configured):
 
 ```bash
-git add .
-git commit -m "Initial commit: eye care ad image generator"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/eye-care-image-gen.git
+cd C:\Users\KIIT\Projects\eye-care-image-gen
 git push -u origin main
 ```
 
-Replace `YOUR_USERNAME` and the repo name with yours.
+Repo URL: **https://github.com/Shakuntalaeye/eye-care-image-gen**
 
 ## Deploy to Vercel
 
